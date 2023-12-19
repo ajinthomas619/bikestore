@@ -1,0 +1,165 @@
+:root {
+    font-size: 16px; /* Define your base font size here */
+  }
+  
+  .headerParentDiv {
+    padding: 0.625rem; /* 10px converted to rem */
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+  }
+  
+  .headerChildDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .placeSearch {
+    width: 16rem; /* 16em converted to rem */
+    height: 3rem; /* 48px converted to rem */
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem; /* 8px converted to rem */
+    border: 0.125rem solid #002f34; /* 2px converted to rem */
+    border-radius: 0.25rem; /* 4px converted to rem */
+    background-color: white;
+  }
+  
+  .placeSearch ::selection {
+    border-color: #23e5db;
+    outline-color: #23e5db;
+  }
+  
+  .placeSearch input {
+    border-color: transparent;
+    outline-color: transparent;
+  }
+  
+  .productSearch {
+    width: 35rem; /* 35em converted to rem */
+    height: 3rem; /* 48px converted to rem */
+    border: 0.125rem solid #002f34; /* 2px converted to rem */
+    border-radius: 0.25rem; /* 4px converted to rem */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+  }
+  
+  .productSearch .input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .productSearch .input input {
+    border-color: transparent;
+    outline-color: transparent;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .productSearch .searchAction {
+    min-width: 3rem; /* 48px converted to rem */
+    height: 3rem; /* 48px converted to rem */
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    background-color: #002f34;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  
+  .productSearch .searchAction svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+  }
+  
+  .language {
+    height: 3rem; /* 48px converted to rem */
+    display: flex;
+    align-items: center;
+  }
+  
+  .language span {
+    font-size: 0.938rem; /* 15px converted to rem */
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+    margin-right: 0.313rem; /* 5px converted to rem */
+  }
+  
+  .language svg {
+  }
+  
+  .span {
+    text-decoration: none;
+    font-size: 1rem; /* 16px converted to rem */
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-weight: bolder;
+    margin-right: 0.313rem; /* 5px converted to rem */
+  }
+  
+  .loginPage hr {
+    margin: 0;
+    background-color: black;
+    height: 0.125rem; /* 2px converted to rem */
+  }
+  
+  .loginPage a {
+    text-decoration: none;
+  }
+  
+  .sellMenu {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .sellMenu .all {
+    fill: white;
+  }
+  
+  .sellMenu .top {
+    fill: #23e5db;
+  }
+  
+  .sellMenu .left {
+    fill: #ffce32;
+  }
+  
+  .sellMenu .right {
+    fill: #3a77ff;
+  }
+  .sellMenu .sellMenuContent {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.875rem; /* 14px converted to rem */
+    font-weight: 700;
+    letter-spacing: 0.0313rem; /* 0.5px converted to rem */
+    color: #002f34;
+  }
+  
+  /* .sellMenu .sellMenuContent svg {
+    align-items: center;
+  } */
+  .sellMenu .sellMenuContent span {
+    margin-left: 0.313rem; /* 5px converted to rem */
+  }
+  
+  @media only screen and (max-width: 43.75rem) {
+    .placeSearch,
+    .productSearch,
+    .sellMenu {
+      display: none;
+    }
+  }
+  
